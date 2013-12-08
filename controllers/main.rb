@@ -1,5 +1,5 @@
 
-class BookmarkManager < Sinatra::application
+class BookmarkManager < Sinatra::Application
 
 
 end
