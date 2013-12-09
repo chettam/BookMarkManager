@@ -1,6 +1,6 @@
 require 'sinatra'
 require 'sinatra/partial'
-require 'Haml'
+require 'haml'
 
 
 class BookmarkManager < Sinatra::Application

@@ -1,4 +1,6 @@
 require 'database_cleaner'
+require 'capybara/rspec'
+require_relative '../app'
 # Remember environment variables from week 1?
 ENV["RACK_ENV"] = 'test' # because we need to know what database to work with
 
@@ -6,6 +8,7 @@ ENV["RACK_ENV"] = 'test' # because we need to know what database to work with
 # because the server needs to know
 # what environment it's running it: test or development.
 # The environment determines what database to use.
+Capybara.app = BookmarkManager.new
 require_relative '../models/init.rb'
 
 RSpec.configure do |config|
