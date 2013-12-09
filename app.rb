@@ -9,5 +9,8 @@ require_relative 'controllers/init'
 class BookmarkManager < Sinatra::Application
   include Helpers
 
+  enable :sessions
+  set :session_secret, 'asldfugasldyguldsiuhfsuidhfaudipahsdsjhwsdjk'
+
 end
 

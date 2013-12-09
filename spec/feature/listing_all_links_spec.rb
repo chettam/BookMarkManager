@@ -8,7 +8,6 @@ feature 'User browses the list of links' do
     add_link('http://www.makersacademy.com/','Makers Academy')
     expect(Link.count).to eq(1)
     link = Link.first
-    puts link.inspect
     expect(link.url).to eq('http://www.makersacademy.com/')
     expect(link.title).to eq('Makers Academy')
   end
