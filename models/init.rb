@@ -6,6 +6,7 @@ env = ENV["RACK_ENV"] || 'development'
 DataMapper.setup(:default, "sqlite:#{Dir.pwd}/data/bookmarkManager_#{env}.db")
 
 require_relative 'link' # this needs to be done after data mapper is initialised
+require_relative 'tag'
 
 # After declaring your models, you should finalise them
 DataMapper.finalize
