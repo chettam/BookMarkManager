@@ -1,6 +1,10 @@
--if flash[:errors]
-  .notice
-    = flash[:errors]
+-if flash[:errors] && !flash[:errors].empty?
+  Sorry, there was the following problems with the form
+  %ul
+    -flash[:errors].each do |error|
+      %li=error
+
+
 
 %h1 Please sign up
 

@@ -3,8 +3,7 @@
 %ul
   -@links.each do |link|
     %li
-      %a{title: link.title,href: link.url}
-        =link.title
+      %a{title: link.title,href: link.url}=link.title
 
 #new-link
   %form{ action: '/links', method: 'post'}
