@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="2d18f942-faf5-4339-a9b2-607e09c88142" name="Default" comment="" />
-    <list default="true" id="b2b0d6c7-c5a6-4897-affa-0d34b1cf967f" name="added env to DB (cherry picked from commit 8f0f3f8)" comment="mutliple error message returned">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Rakefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/sessions/new.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/session.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/feature/user_signed_in_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/init.rb" afterPath="$PROJECT_DIR$/controllers/init.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/init.rb" afterPath="$PROJECT_DIR$/models/init.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/user.rb" afterPath="$PROJECT_DIR$/models/user.rb" />
+    <list default="true" id="b2b0d6c7-c5a6-4897-affa-0d34b1cf967f" name="added env to DB (cherry picked from commit 8f0f3f8)" comment="handling user signin">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/bookmarkManager_development.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/bookmarkManager_test.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BookMarkManager.iws" />
@@ -46,7 +42,7 @@
           <file leaf-file-name="user.rb" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/models/user.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="38" column="2" selection-start="1278" selection-end="1278" vertical-scroll-proportion="1.5166297" vertical-offset="0" max-vertical-offset="828">
+                <state line="38" column="2" selection-start="1278" selection-end="1278" vertical-scroll-proportion="1.5510204" vertical-offset="0" max-vertical-offset="828">
                   <folding />
                 </state>
               </provider>
@@ -95,7 +91,7 @@
           <file leaf-file-name="user_signed_in_spec.rb" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/spec/feature/user_signed_in_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="26" column="0" selection-start="716" selection-end="716" vertical-scroll-proportion="1.0086207" vertical-offset="0" max-vertical-offset="666">
+                <state line="26" column="0" selection-start="716" selection-end="716" vertical-scroll-proportion="1.030837" vertical-offset="0" max-vertical-offset="666">
                   <folding />
                 </state>
               </provider>
@@ -301,6 +297,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookMarkManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookMarkManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -564,7 +574,11 @@
       <created>1386614879280</created>
       <updated>1386614879280</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="handling user signin">
+      <created>1386664759427</created>
+      <updated>1386664759427</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -591,22 +605,22 @@
     <frame x="-2" y="0" width="1604" height="877" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20360361" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38726115" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38726115" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13431877" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13431877" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32702702" sideWeight="0.35607675" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3745223" sideWeight="0.6439232" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3745223" sideWeight="0.6439232" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -654,7 +668,8 @@
     <MESSAGE value="added password and email validation&#10;" />
     <MESSAGE value="Added emails validation and duplicate checks" />
     <MESSAGE value="mutliple error message returned" />
-    <option name="LAST_COMMIT_MESSAGE" value="mutliple error message returned" />
+    <MESSAGE value="handling user signin" />
+    <option name="LAST_COMMIT_MESSAGE" value="handling user signin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -980,7 +995,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/feature/user_signed_in_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="716" selection-end="716" vertical-scroll-proportion="1.0086207" vertical-offset="0" max-vertical-offset="666">
+        <state line="26" column="0" selection-start="716" selection-end="716" vertical-scroll-proportion="1.030837" vertical-offset="0" max-vertical-offset="666">
           <folding />
         </state>
       </provider>
@@ -994,7 +1009,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="2" selection-start="1278" selection-end="1278" vertical-scroll-proportion="1.5166297" vertical-offset="0" max-vertical-offset="828">
+        <state line="38" column="2" selection-start="1278" selection-end="1278" vertical-scroll-proportion="1.5510204" vertical-offset="0" max-vertical-offset="828">
           <folding />
         </state>
       </provider>
