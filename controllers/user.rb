@@ -16,4 +16,15 @@ class BookmarkManager  < Sinatra::Application
       haml :'/users/new'
     end
   end
+
+  get '/users/reset' do
+    haml :'users/reset'
+  end
+
+  post '/users/reset' do
+   token =  password_recovery_token(params[:email])
+   send_simple_message(token)
+
+  end
+
 end

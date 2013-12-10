@@ -8,6 +8,8 @@ gem 'dm-sqlite-adapter'
 gem 'database_cleaner'
 gem 'bcrypt-ruby'
 gem 'sinatra-flash'
+gem 'rest-client'
+gem 'multimap'
 
 
 group :development, :test do
