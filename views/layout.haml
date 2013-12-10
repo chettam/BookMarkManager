@@ -2,7 +2,13 @@
   %head
     %title= @title
   %body{id:@action}
-    Welcome,
-    -if current_user
-      =current_user.email
-    =yield
+  -if flash[:notice]
+    %li= flash[:notice]
+
+  -if current_user
+    %p= 'Welcome, ' + current_user.email
+    %form{action:'/sessions',method:'post'}
+      %input{type: 'hidden', name:'_method',value:'delete'}
+      %input{type: 'submit',name: 'submit', value: 'Sign out' }
+
+  =yield
