@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="2d18f942-faf5-4339-a9b2-607e09c88142" name="Default" comment="" />
-    <list default="true" id="b2b0d6c7-c5a6-4897-affa-0d34b1cf967f" name="added env to DB (cherry picked from commit 8f0f3f8)" comment="user can sign out&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/partial/_flash.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/partial/_footer.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/partial/_header.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/partial/_link.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/bookmarkManager_development.db" afterPath="$PROJECT_DIR$/data/bookmarkManager_development.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.haml" afterPath="$PROJECT_DIR$/views/layout.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/link.rb" afterPath="$PROJECT_DIR$/models/link.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/main.haml" afterPath="$PROJECT_DIR$/views/main.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/users/reset.haml" afterPath="$PROJECT_DIR$/views/users/reset.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/user.rb" afterPath="$PROJECT_DIR$/controllers/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/helpers/user.rb" afterPath="$PROJECT_DIR$/helpers/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/feature/user_reset_password_spec.rb" afterPath="$PROJECT_DIR$/spec/feature/user_reset_password_spec.rb" />
+    <list default="true" id="b2b0d6c7-c5a6-4897-affa-0d34b1cf967f" name="added env to DB (cherry picked from commit 8f0f3f8)" comment="css and partials&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BookMarkManager.iws" />
@@ -743,7 +730,11 @@
       <created>1386664759427</created>
       <updated>1386664759427</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="css and partials&#10;">
+      <created>1386782579711</created>
+      <updated>1386782579711</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -770,6 +761,7 @@
     <frame x="0" y="22" width="2513" height="1418" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20340237" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3860947" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -785,7 +777,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -839,7 +830,8 @@
     <MESSAGE value="handling user signin" />
     <MESSAGE value="user can signout" />
     <MESSAGE value="user can sign out&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="user can sign out&#10;" />
+    <MESSAGE value="css and partials&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="css and partials&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
