@@ -1,9 +1,9 @@
 %h1 Bookmark Manager
 
-%ul
-  -@links.each do |link|
-    %li
-      %a{title: link.title,href: link.url}=link.title
+#container
+  %ul{id:'links-container'}
+    -@links.each do |link|
+      = render(:haml,:'partial/_link',:locals => {link: link})
 
 #new-link
   %form{ action: '/links', method: 'post'}

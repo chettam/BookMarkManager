@@ -10,8 +10,9 @@ feature 'User reset password in' do
 
   scenario 'with correct email' do
     reset_password('test@test.com')
-    user = User.first(:email => 'test@test.com')
-    visit 'users/reset/'+ user.password_token
+    user = User.first(email: 'test@test.com')
+    puts user.inspect
+    visit "users/reset/#{user.password_token}"
     expect(page).to have_content('Enter new password:')
   end
 

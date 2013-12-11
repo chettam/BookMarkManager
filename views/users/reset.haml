@@ -1,15 +1,9 @@
 %h1 Reset Password
 
--if params.empty?
-  %form{action: '/users/reset', method:'post'}
-    %label{for: 'email'} Email:
-    %input{type: 'text', name: 'email'}
-    %input{type: 'submit',name: 'submit', value: 'Reset password' }
--else
-  %form{action: '/users/reset_password', method:'post'}
-    %label{for: 'password'} New Password:
-    %input{type: 'password', name: 'password'}
-    %label{for: 'password_confirmation'} New Password confirmation:
-    %input{type: 'password', name: 'password_confirmation'}
-    %input{type: 'hidden',name: 'token', value: params[0]}
-    %input{type: 'submit',name: 'submit', value: 'Reset password' }
+
+%form{action: '/users/reset', method:'post'}
+  %label{for: 'email'} Email:
+  %input{type: 'text', name: 'email'}
+  %input{type: 'submit',name: 'submit', value: 'Reset password' }
+
+

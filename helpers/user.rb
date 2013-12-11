@@ -5,10 +5,9 @@ module Helpers
   end
 
   def password_recovery_token(email)
-    user = User.first(:email => email)
-    user.password_token = Array.new(64) {(65 + rand(58)).chr}.join
-    user.password_token_timestamp = Time.now
-    user.save
-    user.password_token
+    user = User.first(email:  email)
+    user.update(password_token: Array.new(64) {(65 + rand(58)).chr}.join, password_token_timestamp: Time.now)
+
+    puts User.save
   end
 end

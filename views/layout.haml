@@ -1,14 +1,14 @@
 %html(xmlns="http://www.w3.org/1999/xhtml")
   %head
     %title= @title
+    %link{type: 'text/css', rel: 'stylesheet', href:'/css/main.css'}
+    %link{type: 'text/css', rel: 'stylesheet', href: 'http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps'}
   %body{id:@action}
-  -if flash[:notice]
-    %li= flash[:notice]
+    = render(:haml,:'partial/_header')
 
-  -if current_user
-    %p= 'Welcome, ' + current_user.email
-    %form{action:'/sessions',method:'post'}
-      %input{type: 'hidden', name:'_method',value:'delete'}
-      %input{type: 'submit',name: 'submit', value: 'Sign out' }
+    = render(:haml,:'partial/_flash')
 
-  =yield
+    =yield
+
+    = render(:haml,:'partial/_footer')
+

@@ -22,9 +22,8 @@ class BookmarkManager  < Sinatra::Application
   end
 
   post '/users/reset' do
-   token =  password_recovery_token(params[:email])
+   token = password_recovery_token(params[:email])
    send_simple_message(token)
-
   end
 
 end

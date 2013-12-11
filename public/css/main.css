@@ -1,0 +1,142 @@
+body {
+    font-family: Helvetica, Arial, Sans-serif;
+    background-color: #6BACC4;
+}
+
+
+a.button {
+    -moz-box-shadow: 0px 10px 14px -7px #276873;
+    -webkit-box-shadow: 0px 10px 14px -7px #276873;
+    box-shadow: 0px 10px 14px -7px #276873;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #599bb3), color-stop(1, #408c99));
+    background:-moz-linear-gradient(top, #599bb3 5%, #408c99 100%);
+    background:-webkit-linear-gradient(top, #599bb3 5%, #408c99 100%);
+    background:-o-linear-gradient(top, #599bb3 5%, #408c99 100%);
+    background:-ms-linear-gradient(top, #599bb3 5%, #408c99 100%);
+    background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99',GradientType=0);
+    background-color:#599bb3;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;
+    border-radius:8px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:arial;
+    font-size:20px;
+    font-weight:bold;
+    padding:13px 32px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #3d768a;
+}
+a.button:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #599bb3));
+    background:-moz-linear-gradient(top, #408c99 5%, #599bb3 100%);
+    background:-webkit-linear-gradient(top, #408c99 5%, #599bb3 100%);
+    background:-o-linear-gradient(top, #408c99 5%, #599bb3 100%);
+    background:-ms-linear-gradient(top, #408c99 5%, #599bb3 100%);
+    background:linear-gradient(to bottom, #408c99 5%, #6bacc4 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#599bb3',GradientType=0);
+    background-color:#408c99;
+}
+a.button:active {
+    position:relative;
+    top:1px;
+}
+
+
+
+#header {
+    height: 80px;
+    background-color: black;
+    color: #6BACC4;
+    display: flex;
+    padding: 0 20px;
+    border-radius: 15px;
+}
+
+#header > * {
+    margin: auto 0;
+}
+#header #logo {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 3em;
+    display: flex;
+}
+#header #add-links {
+    flex: 1;
+    -webkit-flex: 1;
+    text-align: right;
+}
+
+#header #user-links {
+    flex: 1;
+    -webkit-flex: 1;
+    text-align: right;
+}
+
+#links-container {
+
+    margin: 40px;
+    height:400px;
+}
+
+#links {
+    background-color: white;
+    margin: 10px inherit;
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    padding: 15px 10px;
+    border-radius: 15px;
+}
+
+#links a.title {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 2em;
+    color: black;
+    letter-spacing: 2px;
+}
+
+#links .description {
+    margin: 10px inherit;
+}
+
+#links .source {
+    /* http://learnlayout.com/float.html and the next 4 sections */
+    float: right;
+    font-size: 12px;
+}
+
+#footer {
+    display: flex;
+    border-radius: 15px;
+    background-color: black;
+    color: #6BACC4;
+}
+
+#footer > * {
+    margin: auto inherit;
+}
+
+#footer img {
+    /* http://stackoverflow.com/questions/10658475/3px-extra-height-on-a-div-with-an-image-inside-it */
+    vertical-align: top;
+}
+
+#footer #technologies {
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+#footer p {
+    padding: 5px 25px;
+}
+
+#notice {
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgba(67,183,120,0.75);
+    border-radius: 4px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.4);
+    color: white;
+}

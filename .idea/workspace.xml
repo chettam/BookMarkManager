@@ -3,6 +3,19 @@
   <component name="ChangeListManager">
     <list id="2d18f942-faf5-4339-a9b2-607e09c88142" name="Default" comment="" />
     <list default="true" id="b2b0d6c7-c5a6-4897-affa-0d34b1cf967f" name="added env to DB (cherry picked from commit 8f0f3f8)" comment="user can sign out&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/partial/_flash.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/partial/_footer.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/partial/_header.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/partial/_link.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/bookmarkManager_development.db" afterPath="$PROJECT_DIR$/data/bookmarkManager_development.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.haml" afterPath="$PROJECT_DIR$/views/layout.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/link.rb" afterPath="$PROJECT_DIR$/models/link.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/main.haml" afterPath="$PROJECT_DIR$/views/main.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/users/reset.haml" afterPath="$PROJECT_DIR$/views/users/reset.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/user.rb" afterPath="$PROJECT_DIR$/controllers/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/helpers/user.rb" afterPath="$PROJECT_DIR$/helpers/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/feature/user_reset_password_spec.rb" afterPath="$PROJECT_DIR$/spec/feature/user_reset_password_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BookMarkManager.iws" />
@@ -18,7 +31,7 @@
     <SUITE FILE_PATH="coverage/BookMarkManager@Run_spec__tag_spec___BookMarkManager.coverage" NAME="Run spec 'tag_spec': BookMarkManager Coverage Results" MODIFIED="1386597634938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BookMarkManager" />
     <SUITE FILE_PATH="coverage/BookMarkManager@All_tests_in_spec__BookMarkManager.coverage" NAME="All tests in spec: BookMarkManager Coverage Results" MODIFIED="1386596253543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spec" MODULE_NAME="BookMarkManager" />
     <SUITE FILE_PATH="coverage/BookMarkManager@Run_spec__tag_spec___BookMarkManager__1_.coverage" NAME="Run spec 'tag_spec': BookMarkManager (1) Coverage Results" MODIFIED="1386594591137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BookMarkManager" />
-    <SUITE FILE_PATH="coverage/BookMarkManager@All_specs_in_spec__BookMarkManager.coverage" NAME="All specs in spec: BookMarkManager Coverage Results" MODIFIED="1386684254380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BookMarkManager" />
+    <SUITE FILE_PATH="coverage/BookMarkManager@All_specs_in_spec__BookMarkManager.coverage" NAME="All specs in spec: BookMarkManager Coverage Results" MODIFIED="1386780659863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BookMarkManager" />
     <SUITE FILE_PATH="coverage/BookMarkManager@Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1386597640783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="BookMarkManager" />
     <SUITE FILE_PATH="coverage/BookMarkManager@Run_spec__link_spec___BookMarkManager.coverage" NAME="Run spec 'link_spec': BookMarkManager Coverage Results" MODIFIED="1386594585363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BookMarkManager" />
   </component>
@@ -33,31 +46,22 @@
     <favorites_list name="BookMarkManager" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.4601687">
       <split-first>
         <leaf>
           <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/controllers/user.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="26" column="0" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+                <state line="24" column="50" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="reset.haml" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/views/users/reset.haml">
+          <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/public/css/main.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="13" column="46" selection-start="550" selection-end="550" vertical-scroll-proportion="0.2506427" vertical-offset="0" max-vertical-offset="778">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="session.rb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/controllers/session.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="20" column="20" selection-start="499" selection-end="515" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+                <state line="62" column="19" selection-start="2099" selection-end="2099" vertical-scroll-proportion="0.22708334" vertical-offset="712" max-vertical-offset="2205">
                   <folding />
                 </state>
               </provider>
@@ -66,7 +70,25 @@
           <file leaf-file-name="layout.haml" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/layout.haml">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="14" column="0" selection-start="375" selection-end="375" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="300">
+                <state line="14" column="0" selection-start="409" selection-end="409" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="300">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_footer.haml" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/views/partial/_footer.haml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="6" column="21" selection-start="281" selection-end="281" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="180">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_flash.haml" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/views/partial/_flash.haml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="2" column="0" selection-start="41" selection-end="41" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="120">
                   <folding />
                 </state>
               </provider>
@@ -75,10 +97,35 @@
           <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/helpers/user.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-                  <folding>
-                    <marker date="1386678465000" expanded="true" signature="148:343" placeholder=" ... end" />
-                  </folding>
+                <state line="12" column="3" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="link.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/controllers/link.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="7" column="3" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="link.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/helpers/link.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="0" selection-start="0" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_link.haml" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/views/partial/_link.haml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="4" column="21" selection-start="245" selection-end="245" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="150">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -87,15 +134,6 @@
             <entry file="file://$PROJECT_DIR$/helpers/mail.rb">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="11" column="3" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Gemfile">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="17" column="3" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
                   <folding />
                 </state>
               </provider>
@@ -117,7 +155,34 @@
           <file leaf-file-name="user_managment_spec.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/spec/feature/user_managment_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="26" column="0" selection-start="925" selection-end="1217" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="585">
+                <state line="11" column="84" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="init.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/models/init.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="14" column="0" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="spec_helper.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="2" column="25" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="session.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/controllers/session.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="22" column="0" selection-start="522" selection-end="522" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
                   <folding />
                 </state>
               </provider>
@@ -126,7 +191,16 @@
           <file leaf-file-name="main.haml" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/main.haml">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="12" column="26" selection-start="293" selection-end="293" vertical-scroll-proportion="0.23841059" vertical-offset="0" max-vertical-offset="755">
+                <state line="3" column="26" selection-start="59" selection-end="59" vertical-scroll-proportion="0.048076924" vertical-offset="0" max-vertical-offset="936">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_header.haml" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/views/partial/_header.haml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="13" column="63" selection-start="545" selection-end="545" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="285">
                   <folding />
                 </state>
               </provider>
@@ -135,7 +209,7 @@
           <file leaf-file-name="user_signed_out_spec.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/spec/feature/user_signed_out_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="18" column="0" selection-start="443" selection-end="443" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+                <state line="24" column="3" selection-start="593" selection-end="593" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
                   <folding />
                 </state>
               </provider>
@@ -144,16 +218,7 @@
           <file leaf-file-name="user_reset_password_spec.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/spec/feature/user_reset_password_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="12" column="47" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="new.haml" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/views/sessions/new.haml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="3" column="0" selection-start="62" selection-end="64" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="210">
+                <state line="25" column="3" selection-start="599" selection-end="599" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
                   <folding />
                 </state>
               </provider>
@@ -162,7 +227,7 @@
           <file leaf-file-name="new.haml" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/users/new.haml">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="18" selection-start="0" selection-end="18" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="360">
+                <state line="18" column="16" selection-start="549" selection-end="549" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="360">
                   <folding />
                 </state>
               </provider>
@@ -199,7 +264,6 @@
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
         <option value="$PROJECT_DIR$/controllers/main.rb" />
         <option value="$PROJECT_DIR$/spec/tag_spec.rb" />
-        <option value="$PROJECT_DIR$/models/link.rb" />
         <option value="$PROJECT_DIR$/models/tag.rb" />
         <option value="$PROJECT_DIR$/helpers/link.rb" />
         <option value="$PROJECT_DIR$/helpers/tag.rb" />
@@ -213,30 +277,35 @@
         <option value="$PROJECT_DIR$/helpers/init.rb" />
         <option value="$PROJECT_DIR$/app.rb" />
         <option value="$PROJECT_DIR$/spec/feature/user_managment_spec.rb" />
-        <option value="$PROJECT_DIR$/views/main.haml" />
         <option value="$PROJECT_DIR$/Rakefile" />
-        <option value="$PROJECT_DIR$/models/init.rb" />
         <option value="$PROJECT_DIR$/spec/feature/user_signed_in_spec.rb" />
         <option value="$PROJECT_DIR$/views/session/new.haml" />
         <option value="$PROJECT_DIR$/controllers/init.rb" />
         <option value="$PROJECT_DIR$/spec/feature/user_signed_out_spec.rb" />
         <option value="$PROJECT_DIR$/controllers/session.rb" />
-        <option value="$PROJECT_DIR$/views/layout.haml" />
-        <option value="$PROJECT_DIR$/views/users/new.haml" />
         <option value="$PROJECT_DIR$/models/user.rb" />
-        <option value="$PROJECT_DIR$/helpers/user.rb" />
-        <option value="$PROJECT_DIR$/controllers/user.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/helpers/mail.rb" />
         <option value="$PROJECT_DIR$/spec/feature/user_reset_password_spec.rb" />
+        <option value="$PROJECT_DIR$/models/init.rb" />
         <option value="$PROJECT_DIR$/views/users/reset.haml" />
+        <option value="$PROJECT_DIR$/helpers/user.rb" />
+        <option value="$PROJECT_DIR$/models/link.rb" />
+        <option value="$PROJECT_DIR$/views/partial/_hearder.haml" />
+        <option value="$PROJECT_DIR$/controllers/user.rb" />
+        <option value="$PROJECT_DIR$/views/layout.haml" />
+        <option value="$PROJECT_DIR$/views/partial/_footer.haml" />
+        <option value="$PROJECT_DIR$/views/partial/_flash.haml" />
+        <option value="$PROJECT_DIR$/views/users/new.haml" />
+        <option value="$PROJECT_DIR$/views/partial/_link.haml" />
+        <option value="$PROJECT_DIR$/public/css/main.css" />
+        <option value="$PROJECT_DIR$/views/main.haml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="45" />
     <option name="y" value="22" />
-    <option name="width" value="2036" />
+    <option name="width" value="2513" />
     <option name="height" value="1418" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -359,7 +428,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partial" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -374,10 +447,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="feature" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -392,20 +461,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BookMarkManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BookMarkManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -455,6 +510,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/css" />
       <recent name="$PROJECT_DIR$/spec" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -711,19 +767,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="45" y="22" width="2036" height="1418" extended-state="0" />
+    <frame x="0" y="22" width="2513" height="1418" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20340237" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3860947" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3860947" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998997" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16900702" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13638203" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32702702" sideWeight="0.35607675" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25221893" sideWeight="0.6439232" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25221893" sideWeight="0.6439232" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329142" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -789,33 +845,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/layout.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="252">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/feature/listing_all_links_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="3" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/link_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="8" selection-start="88" selection-end="157" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="522" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="25" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="774" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/tag_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="3" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="234" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.ru">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="144" />
@@ -930,11 +959,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/link.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="3" selection-start="156" selection-end="156" vertical-scroll-proportion="0.29508197" vertical-offset="0" max-vertical-offset="549" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/helpers/tag.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="3" selection-start="123" selection-end="123" vertical-scroll-proportion="0.22950819" vertical-offset="0" max-vertical-offset="549" />
@@ -943,16 +967,6 @@
     <entry file="file://$PROJECT_DIR$/views/tag.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="19" selection-start="118" selection-end="118" vertical-scroll-proportion="0.20689656" vertical-offset="0" max-vertical-offset="522" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="25" selection-start="77" selection-end="77" vertical-scroll-proportion="0.042056076" vertical-offset="0" max-vertical-offset="856" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/link.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="3" selection-start="178" selection-end="178" vertical-scroll-proportion="0.14499424" vertical-offset="0" max-vertical-offset="869" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/tag.rb">
@@ -980,11 +994,6 @@
         <state line="7" column="3" selection-start="150" selection-end="150" vertical-scroll-proportion="0.15403423" vertical-offset="0" max-vertical-offset="818" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/main.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="21" selection-start="22" selection-end="45" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/tag.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="3" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216" />
@@ -993,11 +1002,6 @@
     <entry file="file://$PROJECT_DIR$/helpers/init.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="10" selection-start="57" selection-end="57" vertical-scroll-proportion="0.046153847" vertical-offset="0" max-vertical-offset="780" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/helpers/link.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/user_spec.rb">
@@ -1017,26 +1021,28 @@
         <state line="6" column="27" selection-start="204" selection-end="204" vertical-scroll-proportion="0.23275863" vertical-offset="0" max-vertical-offset="486" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/init.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="560" selection-end="560" vertical-scroll-proportion="0.5587583" vertical-offset="0" max-vertical-offset="451" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/init.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="16" selection-start="111" selection-end="111" vertical-scroll-proportion="0.15517241" vertical-offset="0" max-vertical-offset="464" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/feature/user_managment_spec.rb">
+    <entry file="file://$PROJECT_DIR$/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="925" selection-end="1217" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+        <state line="11" column="16" selection-start="403" selection-end="403" vertical-scroll-proportion="0.20195839" vertical-offset="0" max-vertical-offset="817">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/feature/user_signed_out_spec.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="443" selection-end="443" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+        <state line="17" column="3" selection-start="292" selection-end="292" vertical-scroll-proportion="0.25940996" vertical-offset="0" max-vertical-offset="983">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/users/reset.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="202" selection-end="202" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="225">
           <folding />
         </state>
       </provider>
@@ -1048,39 +1054,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/user.rb">
+    <entry file="file://$PROJECT_DIR$/models/link.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="16" selection-start="403" selection-end="403" vertical-scroll-proportion="0.20195839" vertical-offset="0" max-vertical-offset="817">
+        <state line="1" column="30" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/user.rb">
+    <entry file="file://$PROJECT_DIR$/spec/feature/user_managment_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+        <state line="11" column="84" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/helpers/user.rb">
+    <entry file="file://$PROJECT_DIR$/views/sessions/new.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-          <folding>
-            <marker date="1386678465000" expanded="true" signature="148:343" placeholder=" ... end" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="3" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+        <state line="3" column="0" selection-start="62" selection-end="64" vertical-scroll-proportion="0.048076924" vertical-offset="0" max-vertical-offset="936">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/session.rb">
+    <entry file="file://$PROJECT_DIR$/spec/feature/user_reset_password_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="20" selection-start="499" selection-end="515" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+        <state line="25" column="3" selection-start="599" selection-end="599" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/main.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="3" selection-start="103" selection-end="103" vertical-scroll-proportion="0.12207528" vertical-offset="0" max-vertical-offset="983">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/feature/user_signed_out_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="3" selection-start="593" selection-end="593" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
           <folding />
         </state>
       </provider>
@@ -1092,44 +1103,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/feature/user_reset_password_spec.rb">
+    <entry file="file://$PROJECT_DIR$/views/partial/_header.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="47" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+        <state line="13" column="63" selection-start="545" selection-end="545" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="25" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/init.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="50" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/layout.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="375" selection-end="375" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="300">
+        <state line="14" column="0" selection-start="409" selection-end="409" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="300">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/sessions/new.haml">
+    <entry file="file://$PROJECT_DIR$/views/partial/_footer.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="62" selection-end="64" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="210">
+        <state line="6" column="21" selection-start="281" selection-end="281" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/session.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="522" selection-end="522" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/users/new.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="18" selection-start="0" selection-end="18" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="770">
+        <state line="18" column="16" selection-start="549" selection-end="549" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/partial/_flash.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="41" selection-end="41" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="120">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helpers/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="3" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/link.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="3" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helpers/link.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/partial/_link.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="21" selection-start="245" selection-end="245" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="150">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/main.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="26" selection-start="293" selection-end="293" vertical-scroll-proportion="0.23841059" vertical-offset="0" max-vertical-offset="755">
+        <state line="3" column="26" selection-start="59" selection-end="59" vertical-scroll-proportion="0.048076924" vertical-offset="0" max-vertical-offset="936">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/users/reset.haml">
+    <entry file="file://$PROJECT_DIR$/public/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="46" selection-start="550" selection-end="550" vertical-scroll-proportion="0.2506427" vertical-offset="0" max-vertical-offset="778">
+        <state line="62" column="19" selection-start="2099" selection-end="2099" vertical-scroll-proportion="0.22708334" vertical-offset="712" max-vertical-offset="2205">
           <folding />
         </state>
       </provider>
