@@ -1,10 +1,12 @@
 body {
     font-family: Helvetica, Arial, Sans-serif;
-    background-color: #6BACC4;
+    background-image:url('/images/tree.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
-a.button {
+.button {
     -moz-box-shadow: 0px 10px 14px -7px #276873;
     -webkit-box-shadow: 0px 10px 14px -7px #276873;
     box-shadow: 0px 10px 14px -7px #276873;
@@ -29,7 +31,8 @@ a.button {
     text-decoration:none;
     text-shadow:0px 1px 0px #3d768a;
 }
-a.button:hover {
+
+.button:hover {
     background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #599bb3));
     background:-moz-linear-gradient(top, #408c99 5%, #599bb3 100%);
     background:-webkit-linear-gradient(top, #408c99 5%, #599bb3 100%);
@@ -39,7 +42,7 @@ a.button:hover {
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#599bb3',GradientType=0);
     background-color:#408c99;
 }
-a.button:active {
+.button:active {
     position:relative;
     top:1px;
 }
@@ -49,7 +52,7 @@ a.button:active {
 #header {
     height: 80px;
     background-color: black;
-    color: #6BACC4;
+    color: white;
     display: flex;
     padding: 0 20px;
     border-radius: 15px;
@@ -82,6 +85,7 @@ a.button:active {
 }
 
 #links {
+    position: relative;
     background-color: white;
     margin: 10px inherit;
     box-shadow: 0 0 5px rgba(0,0,0,0.4);
@@ -105,8 +109,23 @@ a.button:active {
     float: right;
     font-size: 12px;
 }
+#links .star {
+    position: absolute;
+    font-size: 40px;
+    right: 15px;
+    top: 15px;
+    color: #599BB3;
+    cursor: pointer;
+}
+
+#links .star.solid {
+    opacity: 0; /* not hidden (nonexistent), just invisible */
+}
 
 #footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
     display: flex;
     border-radius: 15px;
     background-color: black;
@@ -115,6 +134,8 @@ a.button:active {
 
 #footer > * {
     margin: auto inherit;
+
+
 }
 
 #footer img {
@@ -131,12 +152,59 @@ a.button:active {
     padding: 5px 25px;
 }
 
-#notice {
+.notice {
     text-align: center;
     margin: 5px;
     padding: 5px;
-    background-color: rgba(67,183,120,0.75);
-    border-radius: 4px;
+    background-color: rgba(42, 210, 14, 0.75);
+    border-radius: 14px;
     box-shadow: 0 0 3px rgba(0,0,0,0.4);
     color: white;
 }
+
+#error{
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    background-color: red;
+    border-radius: 14px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.4);
+    color: white;
+}
+
+.form {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 1.5em;
+    margin: 10px inherit;
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    padding: 15px 10px;
+    border-radius: 15px;
+}
+
+
+.field label,#field input{
+    display: block;
+}
+
+.field input {
+    margin: 10px inherit;
+    padding: 5px 10px;
+    border-radius: 15px;
+    width: 250px;
+}
+
+#user_sign_in, #add-user, #new-link {
+    display: none;
+    background-color: white;
+}
+
+.fixed-dialog{
+    position: fixed;
+    top: 30px;
+    left: 50%;
+}
+
+
+
+
+

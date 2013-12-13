@@ -2,13 +2,13 @@
   #logo
     Bookmark Manager
   #add-links
-    %a{href: '/links/new',class:'button', id: 'sign-up' }Add link
+    %a#add-link{class:'button' }Add link
   #user-links
     -if current_user
       %span{id: 'welcome-message'}= 'Welcome, ' + current_user.email
       %form{action:'/sessions',method:'post',id: 'sign-out'}
-      %input{type: 'hidden', name:'_method',value:'delete'}
-      %input{type: 'submit',name: 'submit', value: 'Sign out' }
+        %input{type: 'hidden',name: '_method',value:'delete'}
+        %input{type: 'submit',name: 'submit', value: 'Sign out' }
     -else
-      %a{href: '/users/new',class:'button', id: 'sign-up' }Sign up
-      %a{href: '/sessions/new',class:'button', id: 'sign-in' }Sign in
+      %a#sign-up{class:'button'}Sign up
+      %a#sign-in{class:'button'}Sign in

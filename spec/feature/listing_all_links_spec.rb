@@ -1,7 +1,5 @@
 feature 'User browses the list of links' do
 
-
-
   scenario 'when browsing the homepage' do
     expect(Link.count).to eq(0)
     visit '/'
@@ -21,7 +19,8 @@ feature 'User browses the list of links' do
   end
 
   def add_link(url,title,tags = [])
-    within('#new-link') do
+    visit '/'
+    within('#new-link-form') do
       fill_in 'url',   with: url
       fill_in 'title', with: title
       fill_in 'tags',  with: tags.join(' ')

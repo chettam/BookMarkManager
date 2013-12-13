@@ -1,9 +1,10 @@
 %h1 Reset Password
 
 
-%form{action: '/users/reset', method:'post'}
-  %label{for: 'email'} Email:
-  %input{type: 'text', name: 'email'}
-  %input{type: 'submit',name: 'submit', value: 'Reset password' }
+%form#reset-password{action: '/users/reset', method:'post'}
+  .field
+    %label{for: 'email'} Email:
+    %input{type: 'text', name: 'email'}
+    %input{class:'button',type: 'submit',name: 'submit', value: 'Reset password' }
 
 

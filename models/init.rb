@@ -11,4 +11,3 @@ require_relative 'user'
 
 # After declaring your models, you should finalise them
 DataMapper.finalize
-

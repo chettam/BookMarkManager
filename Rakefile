@@ -19,4 +19,4 @@ task :auto_migrate do
   puts 'Auto-migrate complete (data was lost)'
 end
 # Finally, don't forget that before you do any of that stuff,
-# you need to create a database first.
+# you need to create a database first.jj

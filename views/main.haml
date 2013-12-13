@@ -2,17 +2,9 @@
 
 #container
   %ul{id:'links-container'}
-    -@links.each do |link|
-      = render(:haml,:'partial/_link',:locals => {link: link})
+    -if !@links.nil?
+      -@links.each do |link|
+        = render(:haml,:'partial/_link',:locals => {link: link})
 
-#new-link
-  %form{ action: '/links', method: 'post'}
-    %label{for: 'title'} Title:
-    %input{type: 'text', name: 'title'}
-    %label{for: 'url'} Url:
-    %input{type: 'text', name: 'url'}
-    %label{for: 'tags'} Tags:
-    %input{type: 'text', name: 'tags'}
-    %input{type: 'submit',name: 'submit', value: 'Add link' }
 
 

@@ -11,7 +11,7 @@ class BookmarkManager  < Sinatra::Application
       redirect to('/')
     else
       flash[:errors] = ['The email or password are incorrect']
-      haml :'sessions/new'
+      haml :main
     end
   end
 

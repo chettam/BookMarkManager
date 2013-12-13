@@ -3,12 +3,52 @@
     %title= @title
     %link{type: 'text/css', rel: 'stylesheet', href:'/css/main.css'}
     %link{type: 'text/css', rel: 'stylesheet', href: 'http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps'}
-  %body{id:@action}
+    %script{src: 'http://code.jquery.com/jquery-1.10.1.min.js'}
+    %script{src: 'http://code.jquery.com/ui/1.10.1/jquery-ui.js'}
+    %script{src: '/js/action.js'}
+    %script{src: '/js/stared.js'}
+
+  %body
     = render(:haml,:'partial/_header')
 
     = render(:haml,:'partial/_flash')
 
     =yield
+
+    #user_sign_in{class:'form'}
+      %h1 Please Sign in
+      %form#sign-in-form{action: '/sessions', method:'post'}
+        .field
+          %label{for: 'email'} Email:
+          %input{type: 'text', name: 'email'}
+          %label{for: 'password'} Password:
+          %input{type: 'password', name: 'password'}
+          %input{class:'button',type: 'submit',name: 'submit', value: 'Sign in' }
+          %a{href:'/users/reset', class:'button'}Reset Password
+
+    #add-user{class: 'form'}
+      %h1 Please sign up
+      %form#sign-up-form{ action: '/users', method: 'post'}
+        .field
+          %label{for: 'email'} Email:
+          %input{type: 'text', name: 'email', value: '@user.email'}
+          %label{for: 'password'} Password:
+          %input{type: 'password', name: 'password'}
+          %label{for: 'password_confirmation'} Confirm Password:
+          %input{type: 'password', name: 'password_confirmation'}
+          %input{class:'button',type: 'submit',name: 'submit', value: 'Sign up' }
+
+    #new-link{class:'form'}
+      %form#new-link-form{action: '/links', method: 'post'}
+        .field
+          %label{for: 'title'} Title:
+          %input{type: 'text', name: 'title'}
+          %label{for: 'url'} Url:
+          %input{type: 'text', name: 'url'}
+          %label{for: 'tags'} Tags:
+          %input{type: 'text', name: 'tags'}
+          %input{class: 'button',type: 'submit',name: 'submit', value: 'Add link' }
+
 
     = render(:haml,:'partial/_footer')
 
