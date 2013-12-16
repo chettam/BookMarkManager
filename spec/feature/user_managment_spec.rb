@@ -25,7 +25,7 @@ feature 'User signs up' do
 
 
   def sign_up(email = 'alice@example.com', password = 'oranges!', password_confirmation = 'oranges!' )
-    visit '/'
+    visit '/users/new'
     within('#sign-up-form') do
       fill_in :email, with: email
       fill_in :password, with: password

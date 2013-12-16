@@ -6,5 +6,7 @@ class BookmarkManager  < Sinatra::Application
     redirect to('/')
   end
 
-
+  get '/links/new' do
+    haml :'links/new', layout: !request.xhr?
+  end
 end

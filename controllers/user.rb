@@ -1,7 +1,7 @@
 class BookmarkManager  < Sinatra::Application
    get '/users/new' do
      @user = User.new
-     haml :'users/new'
+     haml :'users/new', layout: !request.xhr?
    end
 
   post '/users' do

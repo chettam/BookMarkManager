@@ -1,0 +1,9 @@
+%h1 Please Sign in
+%form#sign-in-form{action: '/sessions', method:'post'}
+  .field
+    %label{for: 'email'} Email:
+    %input{class:'input_field', type: 'text', name: 'email'}
+    %label{for: 'password'} Password:
+    %input{class:'input_field',type: 'password', name: 'password'}
+    %input{class:'button',type: 'submit',name: 'submit', value: 'Sign in' }
+    %a{href:'/users/reset', class:'button'}Reset Password

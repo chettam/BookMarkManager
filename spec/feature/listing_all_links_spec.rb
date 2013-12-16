@@ -19,7 +19,7 @@ feature 'User browses the list of links' do
   end
 
   def add_link(url,title,tags = [])
-    visit '/'
+    visit '/links/new'
     within('#new-link-form') do
       fill_in 'url',   with: url
       fill_in 'title', with: title

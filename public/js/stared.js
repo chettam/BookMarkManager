@@ -1,12 +1,23 @@
-/**
- * Created by jbblanc on 13/12/13.
- */
-
+function showLinkFavouritedNotice(link) {
+    var favourited = !!$(link).data("favourited");
+    // get the text of the .title element
+    // that we find among the children of link
+    var name = $(link).find('.title').text();
+    var message = favourited ?
+        name + " was added to favourites" :
+        name + " was removed from favourites";
+    var $flash = $("<li></li>").addClass('flash').addClass('notice').html(message);
+    $flash.appendTo('#flash-container');
+    setTimeout(function() {
+        $($flash).fadeOut();
+    }, 3000);
+}
 
 function addFavouritesHandler() {
 $(".star.solid").click(function(event) {
     // get the link this star belongs to
     var link = $(this).parent();
+
     // get a boolean value for 'favourited'
     // double negation casts any value to boolean
     var favourited = !!$(link).data("favourited");
@@ -19,18 +30,11 @@ $(".star.solid").click(function(event) {
     showLinkFavouritedNotice(link)
 });
 }
+
 $(function() {
     addFavouritesHandler();
+
 })
 
-function showLinkFavouritedNotice(link) {
-    var favourited = !!$(link).data("favourited");
-    // get the text of the .title element
-    // that we find among the children of link
-    var name = $(link).find('.title').text();
-    var message = favourited ?
-        name + " was added to favourites" :
-        name + " was removed from favourites";
-    var $flash = $("<div></div>").addClass('notice').html(message);
-    $flash.appendTo('#flash-container');
-}
+
+

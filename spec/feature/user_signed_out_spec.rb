@@ -18,7 +18,7 @@ feature 'User signs out' do
 end
 
 def sign_in(email, password)
-  visit '/'
+  visit '/sessions/new'
   within('#sign-in-form') do
     fill_in 'email', with: email
     fill_in 'password', with: password

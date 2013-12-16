@@ -1,9 +1,11 @@
 require 'database_cleaner'
 require 'capybara/rspec'
+require 'capybara/poltergeist'
 ENV["RACK_ENV"] = 'test' # because we need to know what database to work with
 require_relative'../app'
 
 Capybara.app = BookmarkManager.new
+Capybara.javascript_driver = :poltergeist
 
 # this needs to be after ENV["RACK_ENV"] = 'test'
 # because the server needs to know
@@ -24,8 +26,15 @@ RSpec.configure do |config|
   config.order = 'random'
 
   config.before(:suite) do
-    DatabaseCleaner.strategy = :transaction
     DatabaseCleaner.clean_with(:truncation)
+  end
+
+  config.before(:each) do
+    DatabaseCleaner.strategy = :transaction
+  end
+
+  config.before(:each, :js => true) do
+    DatabaseCleaner.strategy = :truncation
   end
 
   config.before(:each) do

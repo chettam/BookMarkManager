@@ -28,4 +28,18 @@ feature 'User adds a new a new link' do
     expect(page).to have_content('Google')
     expect(page).to have_content('Bing')
   end
+
+  scenario 'from the homepage using an ajax form', :js => true do
+    visit '/'
+    click_link 'Add link'
+    within('#new-link-form') do
+      fill_in 'url',   with: 'http://www.example.com/'
+      fill_in 'title', with: 'Example'
+      click_button 'Add link'
+    end
+    expect(page).to have_content('Example')
+    expect(current_path).to eq('/') # we're still on the frontpage
+  end
+
+
 end

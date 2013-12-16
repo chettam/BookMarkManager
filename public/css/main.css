@@ -3,6 +3,7 @@ body {
     background-image:url('/images/tree.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    color: #ffffff;
 }
 
 
@@ -91,6 +92,7 @@ body {
     box-shadow: 0 0 5px rgba(0,0,0,0.4);
     padding: 15px 10px;
     border-radius: 15px;
+    color: black;
 }
 
 #links a.title {
@@ -175,27 +177,30 @@ body {
 .form {
     font-family: 'Oleo Script Swash Caps', cursive;
     font-size: 1.5em;
-    margin: 10px inherit;
     box-shadow: 0 0 5px rgba(0,0,0,0.4);
     padding: 15px 10px;
     border-radius: 15px;
+    color: black;
+    background-color: white;
 }
 
+.dialog{
+    margin-top: -200px
+}
+
+.field{
+    text-align: center;
+}
 
 .field label,#field input{
     display: block;
 }
 
-.field input {
+.field .input_field {
     margin: 10px inherit;
     padding: 5px 10px;
     border-radius: 15px;
     width: 250px;
-}
-
-#user_sign_in, #add-user, #new-link {
-    display: none;
-    background-color: white;
 }
 
 .fixed-dialog{
@@ -203,8 +208,4 @@ body {
     top: 30px;
     left: 50%;
 }
-
-
-
-
 

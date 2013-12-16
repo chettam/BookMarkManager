@@ -1,0 +1,10 @@
+%h1 Add link
+%form#new-link-form{action: '/links', method: 'post'}
+  .field
+    %label{for: 'title'} Title:
+    %input{class:'input_field',type: 'text', name: 'title'}
+    %label{for: 'url'} Url:
+    %input{class:'input_field',type: 'text', name: 'url'}
+    %label{for: 'tags'} Tags:
+    %input{class:'input_field',type: 'text', name: 'tags'}
+    %input{class: 'button',type: 'submit',name: 'submit', value: 'Add link' }

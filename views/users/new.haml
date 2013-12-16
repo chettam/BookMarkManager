@@ -1,0 +1,10 @@
+%h1 Please sign up
+%form#sign-up-form{ action: '/users', method: 'post'}
+  .field
+    %label{for: 'email'} Email:
+    %input{class:'input_field',type: 'text', name: 'email', value: '@user.email'}
+    %label{for: 'password'} Password:
+    %input{class:'input_field',type: 'password', name: 'password'}
+    %label{for: 'password_confirmation'} Confirm Password:
+    %input{class:'input_field',type: 'password', name: 'password_confirmation'}
+    %input{class:'button',type: 'submit',name: 'submit', value: 'Sign up' }

@@ -1,6 +1,6 @@
 class BookmarkManager  < Sinatra::Application
   get '/sessions/new' do
-    haml :'sessions/new'
+    haml :'sessions/new', layout: !request.xhr?
   end
 
   post '/sessions' do
@@ -19,6 +19,10 @@ class BookmarkManager  < Sinatra::Application
     flash[:notice] = 'Good bye!'
     session[:user_id] = nil
     redirect to('/')
+  end
+
+  get 'sessions/new' do
+    haml :'sessions/new'
   end
 
 end

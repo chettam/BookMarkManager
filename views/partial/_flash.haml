@@ -1,13 +1,13 @@
--if flash[:notice]
-  #flash-container
-  %li{class: 'notice'}= flash[:notice]
+#flash-container
+  -if flash[:notice]
+    %li{class: 'notice'}= flash[:notice]
 
--if flash[:error]
-  %li{id: 'error'}= flash[:error]
+  -if flash[:error]
+    %li{id: 'error'}= flash[:error]
 
--if flash[:errors] && !flash[:errors].empty?
-  .error
-    Sorry, there was the following problems with the form
-    %ul
-      -flash[:errors].each do |error|
-        %li=error
+  -if flash[:errors] && !flash[:errors].empty?
+    .error
+      Sorry, there was the following problems with the form
+      %ul
+        -flash[:errors].each do |error|
+          %li=error
